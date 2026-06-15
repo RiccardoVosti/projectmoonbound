@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artemis Program - Zero-G Simulation (Vomit Comet)</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+    <link rel="stylesheet" href="../style/aereo.css">
+</head>
+<body>
+    <audio id="bg-music" src="../sound/lv5.mp3" loop></audio>
+    <div id="fade-overlay"></div>
+
+    <div id="ui-wrapper">
+        <div class="vignette-left"></div>
+        <div class="vignette-right"></div>
+
+        <div id="parabola-ui">
+            <div id="ui-title">ZERO-G SIMULATOR</div>
+            <div class="status-row">
+                <span>STATUS:</span>
+                <span id="phase-text">PREPARING (1G)</span>
+            </div>
+            <div class="status-row">
+                <span>REMAINING TIME:</span>
+                <span id="time-text">22s</span>
+            </div>
+            
+            <div id="parabola-diagram">
+                <svg width="320" height="130" viewBox="0 0 320 130" style="position:absolute; top:0; left:0;">
+                    <path d="M 20 110 Q 160 -90 300 110" fill="transparent" stroke="#555" stroke-width="2" stroke-dasharray="5,5"/>
+                    <path d="M 67 44 Q 160 -45 253 44" fill="transparent" stroke="#00ffff" stroke-width="4"/>
+                </svg>
+                <span class="phase-label" style="bottom: 0; left: 0; color: #ff4444;">CLIMB 2G</span>
+                <span class="phase-label" style="top: 10px; left: 150px; transform: translateX(-50%); color: #00ffff;">0G</span>
+                <span class="phase-label" style="bottom: 0; right: 0; color: #ff4444;">DESCENT 2G</span>
+                
+                <img id="mini-aereo" src="../imgs/aereo.png" alt="plane">
+            </div>
+        </div>
+        <div id="game-container"></div>
+    </div>
+
+    <script src="../script/aereo.js"></script>
+</body>
+</html>

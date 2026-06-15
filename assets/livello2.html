@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artemis Program - Vacuum Chamber</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+    <link rel="stylesheet" href="../style/livello2.css">
+</head>
+<body>
+    <audio id="bg-music" src="../sound/lv2.mp3" loop></audio>
+
+    <div id="fade-overlay">
+        <div id="level-title-text">LEVEL 2<br>VACUUM CHAMBER</div>
+    </div>
+
+    <div id="valve-minigame">
+        <div id="valve-title">CLICK AND ROTATE THE VALVE CONSTANTLY</div>
+        <div id="valve-subtitle">WARNING: HIGH PRESSURE - VALVE WILL SPIN BACK IF YOU STOP!</div>
+        <div id="valve-container">
+            <img id="valve-img-interactive" src="../imgs/valvola.png" draggable="false">
+        </div>
+        <div id="progress-bar-container">
+            <div id="progress-bar-fill"></div>
+        </div>
+    </div>
+
+    <div id="ui-wrapper">
+        <div id="nasa-ui">
+            <div style="text-align: center; color:#fff; font-size:16px; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; border-bottom: 2px solid #fff; padding-bottom: 10px;">
+                ARTEMIS PROGRAM
+            </div>
+            <div class="step-wrapper">
+                <div class="step-line"></div>
+                <div id="step-line-fill" class="step-line-fill" style="height: 0%;"></div>
+                <div id="stepper-container" class="stepper-container"></div>
+            </div>
+        </div>
+
+        <div id="dialogue-box">
+            <div id="profile-img-container"><img id="avatar-img" src="../imgs/Scienziato_faccia1.png"></div>
+            <div id="text-container">
+                <strong id="npc-name-tag" style="color: #fff; text-transform: uppercase; font-size: 22px;">Dr. Aris</strong><br>
+                <span id="dialogue-content" style="color: #fff;"></span>
+                <div id="press-e-hint">Press [E] to continue</div>
+            </div>
+        </div>
+        <div id="game-container"></div>
+    </div>
+
+    <script src="../script/livello2.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+@font-face { 
+    font-family: 'NbpInforma'; 
+    src: url('../font/NbpInformaFivesix-2dXW.ttf') format('truetype'); 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'NbpInforma', sans-serif;
+    color: #fff;
+}
+
+/* --- BACKGROUND STARS --- */
+#particle-canvas {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+}
+
+/* --- CLASSIC VERTICAL SCROLLING CREDITS --- */
+#crawl-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#crawl-text {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.8;
+    color: #ffffff; /* White text */
+    position: absolute;
+    top: 100%; /* Starts just below the screen */
+    animation: scrollCredits 25s linear forwards;
+}
+
+#crawl-text h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+@keyframes scrollCredits {
+    0%   { top: 100%; opacity: 1; }
+    85%  { opacity: 1; }
+    100% { top: -150%; opacity: 0; } /* Scrolls all the way up and fades out */
+}
+
+/* --- BIG SKIP BUTTON --- */
+#skip-btn {
+    position: absolute; 
+    bottom: 40px; 
+    right: 40px; 
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1); 
+    color: #fff; 
+    border: 3px solid #fff;
+    font-family: 'NbpInforma', sans-serif; 
+    font-size: 24px; 
+    font-weight: bold;
+    cursor: pointer; 
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+#skip-btn:hover { 
+    background: #fff; 
+    color: #000; 
+    box-shadow: 0 0 20px #fff; 
+    transform: scale(1.05);
+}
+
+/* --- MOON FLIGHT CINEMATIC --- */
+#cinematic-scene {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden until the crawl finishes */
+    transition: opacity 2s ease;
+}
+
+#the-moon {
+    width: 306px;  /* 18px moltiplicato per 17, mantiene i pixel perfettamente quadrati */
+    height: 306px;
+    position: absolute;
+    top: 20%;
+    image-rendering: pixelated; /* Impedisce al browser di sfocare l'immagine 18x18 */
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.4)); /* Aggiunge un alone luminoso attorno alla pixel art */
+}
+
+#the-ship {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: -300px; 
+    image-rendering: pixelated;
+}
+
+.fly-animation {
+    animation: flyToMoon 7s ease-in forwards;
+}
+
+@keyframes flyToMoon {
+    0% { bottom: -300px; transform: scale(1); opacity: 1;}
+    100% { bottom: 60%; transform: scale(0.05); opacity: 0; }
+}
+
+/* --- MULTI-VIDEO ARCHIVE PANEL --- */
+#video-panel {
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 900px;
+    background: rgba(0, 0, 0, 0.95);
+    border: 4px solid #fff;
+    padding: 30px;
+    text-align: center;
+    z-index: 20;
+    display: none; /* Hidden until cinematic finishes */
+    flex-direction: column;
+    align-items: center;
+}
+
+#video-panel h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Video Selection Menu */
+#video-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-btn {
+    background: #222;
+    color: #fff;
+    border: 2px solid #555;
+    font-family: 'NbpInforma', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    border-color: #fff;
+    background: #444;
+}
+
+.nav-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+}
+
+#video-description {
+    font-size: 20px;
+    margin-bottom: 25px;
+    height: 60px; /* Fixed height to prevent layout jumping */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+}
+
+.action-btn {
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    font-family: 'NbpInforma', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 20px #fff;
+}
+
+/* --- FADE OVERLAY --- */
+#fade-overlay {
+    position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; 
+    background: #000; z-index: 9999; 
+    display: flex; justify-content: center; align-items: center; 
+    pointer-events: none; transition: opacity 2s ease; 
+}
+
+/* --- MUSIC TOGGLE BUTTON --- */
+#music-toggle {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 20000; /* Extremely high so cinematic overlays don't block it */
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#music-toggle:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}

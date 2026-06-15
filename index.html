@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Artemis Program - Inizio Missione</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <audio id="bg-music" src="sound/bg_music.mp3" loop></audio>
+
+    <button id="music-toggle" title="Attiva/Disattiva Musica">🎵</button>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div id="ui-container">
+        <img id="game-title" src="imgs/Titolo.png" alt="Programma Artemis">
+        
+        <input type="text" id="name-input" placeholder="INSERT YOUR PILOT NAME" maxlength="12" autocomplete="off">
+        
+        <button id="start-btn">BEGIN EXPERIMENTS</button>
+    </div>
+
+    <div id="fade-overlay"></div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>

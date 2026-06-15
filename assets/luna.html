@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Moonbound - Mission Accomplished</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../style/luna.css">
+</head>
+
+<body>
+   <audio id="bg-music" src="../sound/luna.mp3" loop></audio>
+
+   <button id="music-toggle" title="Attiva/Disattiva Musica"></button>
+
+    <div id="fade-overlay"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <div id="crawl-container">
+        <div id="crawl-text">
+            <h1>MISSION ACCOMPLISHED</h1>
+            <p>Congratulations, <span id="player-name-display">Recruit</span>.</p>
+            <br>
+            <p>You have successfully completed the rigorous Artemis Training Program.</p>
+            <br>
+            <p>From the crushing G-forces of the centrifuge to the weightless environment of the Neutral Buoyancy Lab, you have proven you have what it takes to join the next generation of space explorers.</p>
+            <br>
+            <p>Humanity's return to the Moon is no longer just a dream. It is a reality, and you are now part of it.</p>
+            <br>
+            <p>Prepare for launch.</p>
+        </div>
+    </div>
+
+    <button id="skip-btn" onclick="triggerCinematic()">SKIP CREDITS &raquo;</button>
+
+    <div id="cinematic-scene">
+        <img id="the-moon" src="../imgs/luna.png" alt="The Moon"> 
+        
+        <img id="the-ship" src="../imgs/astronave.png" alt="Artemis Spaceship">
+    </div>
+
+    <div id="video-panel">
+        <h2>REAL-LIFE NASA ARCHIVES</h2>
+        
+        <div id="video-nav">
+            
+        
+            <button class="nav-btn" onclick="loadVideo('lv1', this)">LVL 1: N.B.L.</button>
+             <button class="nav-btn" onclick="loadVideo('lv2', this)">LVL 2: Vacuum</button>
+            <button class="nav-btn active" onclick="loadVideo('lv3', this)">LVL 3: Drop Tower</button>
+            <button class="nav-btn" onclick="loadVideo('lv4', this)">LVL 4: Centrifuge</button>
+                <button class="nav-btn" onclick="loadVideo('lv5', this)">LVL 5: Zero-G</button>
+        </div>
+
+        <div id="video-description">
+            LEVEL 1 - N.B.L. LAB: The Neutral Buoyancy Laboratory (NBL) in Houston holds 6.2 million gallons of water.
+        </div>
+        
+        <iframe id="yt-player" width="640" height="360" src="https://www.youtube.com/embed/CSZFAlRaZKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <button class="action-btn" id="return-btn" onclick="returnToMenu()">CALCULATING TIME...</button>
+    </div>
+
+    <script src="../script/luna.js"></script>
+</body>
+</html>

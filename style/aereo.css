@@ -1,0 +1,23 @@
+@font-face { font-family: 'NbpInforma'; src: url('../font/NbpInformaFivesix-2dXW.ttf') format('truetype'); }
+body { margin: 0; padding: 0; background-color: #000; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; font-family: 'NbpInforma', sans-serif; }
+#ui-wrapper { position: relative; width: 100vw; height: 100vh; background: #000; }
+
+#parabola-ui {
+    position: absolute; top: 20px; left: 20px; width: 360px;
+    background: rgba(0, 0, 0, 0.95); border: 2px solid #fff; 
+    padding: 20px; box-sizing: border-box; z-index: 1000;
+}
+#ui-title { color: #fff; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid #fff; padding-bottom: 8px; margin-bottom: 15px; text-align: center; }
+.status-row { display: flex; justify-content: space-between; margin-bottom: 10px; color: #fff; font-size: 16px; }
+#phase-text { font-weight: bold; transition: color 0.3s; }
+
+#parabola-diagram { position: relative; width: 100%; height: 130px; margin-top: 15px; }
+#mini-aereo { position: absolute; width: 45px; height: auto; transform: translate(-50%, -50%); z-index: 10; image-rendering: pixelated; }
+.phase-label { position: absolute; font-size: 12px; font-weight: bold; }
+
+.vignette-left { position: absolute; left: 0; top: 0; height: 100vh; width: 300px; background: linear-gradient(to right, black, transparent); pointer-events: none; z-index: 10; }
+.vignette-right { position: absolute; right: 0; top: 0; height: 100vh; width: 300px; background: linear-gradient(to left, black, transparent); pointer-events: none; z-index: 10; }
+
+#game-container { width: 100%; height: 100%; }
+canvas { image-rendering: pixelated; }
+#fade-overlay { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999; pointer-events: none; opacity: 1; transition: opacity 1s ease; }
