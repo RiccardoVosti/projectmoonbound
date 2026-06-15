@@ -23,7 +23,8 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 
 **Super mario:**essendo stato uno dei giochi che mi ha accompagnato durante l'infanzia ho proprio voluto rimettere lo stile platformer in questo gioco con un tocco di stile piu incentrato con la nasa.
 
-[<img src="imgs/wasd.webp" width="500" alt="wasd keyboard">]()
+[<img src="imgs/supermario.jpg" width="500" alt="Super mario">]()
+
 
 
 ## Design dell’interfaccia e modalità di interazione
@@ -39,7 +40,7 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 
 [<img src="imgs/website.gif" width="700" alt="website gameplay">]()
 
-[<img src="imgs/supermario.jpg" width="500" alt="Super mario">]()
+[<img src="imgs/wasd.webp" width="500" alt="wasd keyboard">]()
 
 
 ## Tecnologia usata
