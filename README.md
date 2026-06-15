@@ -21,7 +21,7 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 
 **Reward System (Museo Virtuale):** Il videogioco funge da "esca". La vera ricompensa al termine della sfida è lo sblocco di un archivio interattivo con i reali filmati storici della NASA.
 
-[<img src="imgs/wasd.webp" width="500" alt="Mission control panel">]()
+[<img src="imgs/wasd.webp" width="500" alt="wasd keyboard">]()
 
 
 ## Design dell’interfaccia e modalità di interazione
@@ -35,16 +35,12 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 - **Micro-Learning:** Le spiegazioni scientifiche evitano i "muri di testo". La teoria è divisa in brevi frasi passate tramite finestre di dialogo con l'NPC del gioco (Dr. Aris).
 
 
-[<img src="imgs/website.gif" width="700" alt="Matrix Sci-fi core">]()
+[<img src="imgs/website.gif" width="700" alt="website gameplay">]()
 
-[<img src="imgs/supermario.jpg" width="500" alt="Matrix Sci-fi core">]()
+[<img src="imgs/supermario.jpg" width="500" alt="Super mario">]()
 
 
 ## Tecnologia usata
-Il progetto è stato sviluppato interamente come applicazione web client-side, senza l'uso di framework complessi per la UI (come React o Vue), per mantenere il codice leggero e incentrato sulle performance di gioco.
-
-Le tecnologie principali includono:
-
 **Phaser 3 (Arcade Physics):** Il vero motore del progetto. Ho utilizzato questa potente libreria JavaScript per gestire il *core loop* del gioco, la fisica 2D (gravità, collisioni, bounding box), il rendering degli sprite in pixel-art, le animazioni e la gestione della camera dinamica.
 
 **HTML5 & CSS3:** Utilizzati per strutturare e stilizzare tutta l'interfaccia utente (HUD), i menu di navigazione, i popup modali e le finestre di dialogo. Le transizioni fluide e le cinematiche (come il testo a scorrimento e il decollo dell'astronave) sono realizzate interamente tramite animazioni CSS (keyframes).
@@ -84,3 +80,4 @@ L'app è *browser-based* (nessuna installazione richiesta) e si presta a diversi
 - **Eventi STEM:** Come *exhibit* digitale per incuriosire i ragazzi durante open-day o fiere scientifiche.
 
 
+[<img src="imgs/target.jpg" width="500" alt="kids playing with ipads">]()
