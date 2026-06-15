@@ -6,7 +6,7 @@ Progetto 1: La conquista dello spazio
 
 # Project Moonbound
 Autore: Riccardo Vosti \
-[Project Moonbound](https://riccardovosti.github.io/TESTGRAVITY/)
+[Project Moonbound](https://riccardovosti.github.io/projectmoonbound/)
 
 
 ## Introduzione e tema
@@ -21,6 +21,8 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 
 **Reward System (Museo Virtuale):** Il videogioco funge da "esca". La vera ricompensa al termine della sfida è lo sblocco di un archivio interattivo con i reali filmati storici della NASA.
 
+[<img src="imgs/wasd.webp" width="500" alt="Mission control panel">]()
+
 
 ## Design dell’interfaccia e modalità di interazione
 **Interfaccia Visiva (UI)**
@@ -32,6 +34,10 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 - **Proximity Prompts:** I comandi a schermo (es. `[E] PARLA`) appaiono in automatico solo quando il giocatore è vicino a un oggetto interattivo.
 - **Micro-Learning:** Le spiegazioni scientifiche evitano i "muri di testo". La teoria è divisa in brevi frasi passate tramite finestre di dialogo con l'NPC del gioco (Dr. Aris).
 
+
+[<img src="imgs/website.gif" width="700" alt="Matrix Sci-fi core">]()
+
+[<img src="imgs/supermario.jpg" width="500" alt="Matrix Sci-fi core">]()
 
 
 ## Tecnologia usata
@@ -50,6 +56,21 @@ Le tecnologie principali includono:
 **HTML5 Canvas API:** Utilizzata nativamente (al di fuori di Phaser) nelle schermate di transizione per generare sistemi particellari leggeri e performanti (come lo sfondo stellato e le fiamme dei motori).
 
 **HTML Audio API:** Per la gestione dinamica degli effetti sonori spaziali e della musica di background, con logiche anti-blocco per le policy di autoplay dei browser moderni.
+
+
+```JavaScript
+function triggerMainDialogue() {
+    startDialogue([
+        `Stop right there, ${playerName.toUpperCase()}! Be careful not to fall into the tank yet.`,
+        `Welcome to the N.B.L., the Neutral Buoyancy Lab.`,
+        `This massive pool is 12 meters deep and filled with ultra-purified water.`,
+        `Here we simulate Extravehicular Activities (EVA) or spacewalks. The water mimics the feeling of weightlessness.`,
+        `But beware: your suit is incredibly heavy! If you stop moving, you'll sink to the bottom.`,
+        `Dive in, navigate around the white modules, and repeatedly press [SPACE] or [W] to swim upward.`,
+        `Swim to the other side to complete the test.`
+    ], () => { hasTalkedToScientist = true; });
+}
+```
 
 
 ## Target e contesto d’uso
