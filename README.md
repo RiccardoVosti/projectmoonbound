@@ -21,13 +21,15 @@ Il gioco è un vero e proprio simulatore di addestramento astronautico. Sotto la
 
 **Reward System (Museo Virtuale):** Il videogioco funge da "esca". La vera ricompensa al termine della sfida è lo sblocco di un archivio interattivo con i reali filmati storici della NASA.
 
+**Super mario:**essendo stato uno dei giochi che mi ha accompagnato durante l'infanzia ho proprio voluto rimettere lo stile platformer in questo gioco con un tocco di stile piu incentrato con la nasa.
+
 [<img src="imgs/wasd.webp" width="500" alt="wasd keyboard">]()
 
 
 ## Design dell’interfaccia e modalità di interazione
 **Interfaccia Visiva (UI)**
 - **Terminale Sci-Fi:** Stile minimalista (bianco su nero, font pixel-art) ispirato ai monitor di controllo della NASA.
-- **Zero Distrazioni:** Layout pulito. Una *stepper bar* laterale mostra sempre i progressi e i livelli rimanenti senza ingombrare la visuale.
+- **Task e livelli:**  Una *stepper bar* laterale mostra sempre i progressi e i livelli rimanenti senza ingombrare la visuale.
 
 **Interazione (UX)**
 - **Comandi Familiari:** Controlli standard del gaming PC (`WASD`, `Spazio`, `E`) per azzerare la curva di apprendimento.

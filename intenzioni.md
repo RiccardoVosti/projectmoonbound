@@ -7,10 +7,10 @@ Autore: Riccardo Vosti
 NASA 70
 
 ## Idea di base
-L'idea di base era quella di creare un metodo per far apprendere in modo divertente agli studenti i concentti e esperimenti della nasa per poter andare sullo spazio é percio che ho deciso di utilizzare un gioco per avere il learn while playing che trovo uno dei metodi migliori per incentivare i ragazzi a capire degli argomenti.
+L'idea alla base del progetto è creare un metodo coinvolgente per insegnare agli studenti i concetti e gli esperimenti sviluppati dalla NASA per l'esplorazione spaziale. Per questo motivo ho scelto di sviluppare un videogioco, strutturandolo attorno alla filosofia del learn while playing (imparare giocando): ritengo infatti che la gamification sia uno degli strumenti più efficaci per motivare i ragazzi e facilitare la comprensione di materie complesse.
 
 ## Contenuti e strutturazione
-I contenuti vengono strutturati in 5 livelli suddivisi per difficolta quindi mana mano che si va piu avanti diventano piu difficili, tali livelli servono poi per rispondere al questionario finale e quindi sbloccare larchivio digitale di video inerenti a quei esperimenti.
+I contenuti sono strutturati in 5 livelli a difficoltà crescente. Le conoscenze acquisite durante queste fasi pratiche sono necessarie per superare il questionario finale, il quale permetterà di sbloccare un archivio digitale contenente i video reali di quegli esperimenti.
 
 ## Target
 **Target: Studenti delle Scuole Medie (11-15 anni)**
